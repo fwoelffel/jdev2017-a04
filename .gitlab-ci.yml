@@ -1,0 +1,13 @@
+image: node:6-alpine
+
+deploy:
+  before_script:
+  - npm i
+  script:
+  - npm run build
+  - rm -rf /var/www/static/JDEV2017/a04
+  - mv _static /var/www/static/JDEV2017/a04
+  - mv img/ /var/www/static/JDEV2017/a04
+  - chmod 777 /var/www/static/JDEV2017/a04
+  only:
+  - master
