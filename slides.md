@@ -306,7 +306,7 @@ services:
 variables:
   DOCKER_HOST: tcp://lordgaav__dind-options:2375
   DOCKER_OPTS: --insecure-registry=${DOCKER_REGISTRY}
-  CI_IMAGE_NAME: ${DOCKER_REGISTRY}/ci_${CI_PROJECT_PATH_SLUG}:${CI_COMMIT_SHA}
+  CI_IMAGE_NAME: ${DOCKER_REGISTRY}/${CI_PROJECT_PATH_SLUG}:ci_${CI_COMMIT_SHA}
 stages:
   - builds
   - tests
