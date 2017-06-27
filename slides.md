@@ -384,6 +384,35 @@ git push
 
 ----
 
+Et si je souhaite faire persister des éléments issus de mon pipeline ?
+
+----
+
+### Générons une documentation
+
+```yaml
+documentation:
+  stage: releases
+  only:
+    - tags
+  script:
+    - echo "# Ma documentation" >> documentation.md
+  artifacts:
+    name: "documentation_v$CI_COMMIT_TAG"
+    paths:
+      - documentation.md
+```
+
+----
+
+```
+git add .gitlab-ci.yml
+git commit -m "ci(gitlab): Add documentation job"
+git push
+```
+
+----
+
 Et pourquoi ne pas poser un tag ?
 ```
 git tag 1.0.0
