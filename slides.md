@@ -9,7 +9,7 @@
 
 - Frédéric Woelffel
 - Ingénieur R&D à l'IHU de Strasbourg
-- Développeur Node / DevOps
+- Développeur Node.js
 
 ![](./img/miaou.jpg) <!-- .element: class="fragment" -->
 
