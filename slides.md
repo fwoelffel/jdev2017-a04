@@ -1,9 +1,11 @@
 ## Utilisation de conteneurs dans votre outil de CI
 **Gitlab**
 
-*JDEV2017 - Frédéric Woelffel*
+*JDEV2017 - T4 A04 - Frédéric Woelffel*
 
-<img src="./img/logo_jdev.png" style="background:none;border:none;box-shadow:none"/>
+Marseille / 6 juillet 2017
+
+<img src="./img/logo_jdev.png" height="90px" style="position:absolute;vertical-align:middle;left:0;background:none;border:none;box-shadow:none"/><img src="./img/logo_ihu.png" style="position:absolute;vertical-align:middle;right:0;background:none;border:none;box-shadow:none"/>
 
 ---
 
