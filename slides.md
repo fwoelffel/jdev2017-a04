@@ -486,12 +486,12 @@ Démarrons une instance de Rancher Agent sur le réseau par défaut de Docker
 
 ```
 docker run \
-  --detach\
+  --detach \
   --rm \
-  --env CATTLE_AGENT_IP="172.17.0.1"
+  --env CATTLE_AGENT_IP="172.17.0.1" \
   --volume /var/run/docker.sock:/var/run/docker.sock \
   --volume /var/lib/rancher:/var/lib/rancher \
-  rancher/agent:v1.2.2 http://172.28.0.1:8080/v1/scripts/FEADA433891177754729:1483142400000:F3TVBX3X1LGIL9wHVoUnMMiQkYk
+  rancher/agent:v1.2.2 \ http://172.28.0.1:8080/v1/scripts/FEADA433891177754729:1483142400000:F3TVBX3X1LGIL9wHVoUnMMiQkYk
 ```
 
 ----
