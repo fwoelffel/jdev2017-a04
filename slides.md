@@ -202,7 +202,7 @@ docker run \
   --name gitlab-runner \
   --net jdev \
   --ip 172.28.0.13 \
-  --env CI_SERVER_URL=http://172.28.0.10/ci \
+  --env CI_SERVER_URL=http://172.28.0.1/ci \
   --env REGISTRATION_TOKEN=< votre token > \
   --env RUNNER_ENV="GIT_SSL_NO_VERIFY=1" \
   --env DOCKER_DISABLE_CACHE=true \
